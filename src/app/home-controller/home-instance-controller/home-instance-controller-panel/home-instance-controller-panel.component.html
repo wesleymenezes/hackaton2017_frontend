@@ -1,0 +1,10 @@
+<h3>List of type {{type}} instances </h3>
+<ul>
+  <li *ngFor="let instance of instances" >
+    Id: {{instance.id}}, Name: {{instance.name}}
+  </li>
+</ul>
+
+<button (click)="fetchInstances()">Reload</button>
+
+<div *ngIf="errorMessage" [ngClass] = "'error'"> {{errorMessage}} </div> 

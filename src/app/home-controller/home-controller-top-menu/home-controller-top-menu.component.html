@@ -1,0 +1,17 @@
+<div style="background-color: #c5cae9">
+  <button md-button [mdMenuTriggerFor]="ctrlInstanceMenu">Admin Menu</button>
+  <md-menu #ctrlInstanceMenu="mdMenu" [overlapTrigger]="false">
+    <button disabled md-menu-item [routerLink]="['system-controller-menu']" style="display:flex; align-items:center;">
+      <i class="material-icons" style="text-align: left; font-size: 40px">device_hub</i> Site Admin
+    </button>
+    <button md-menu-item [routerLink]="['instance-controller-menu']" style="display:flex; align-items:center;">
+      <i class="material-icons" style="text-align: left; font-size: 40px; height: 40px;">group_add</i> Customers Admin
+    </button>
+  </md-menu>
+
+  <button md-button [routerLink] ="['/']">Logout</button>
+</div>
+
+<div class="border not-padded">
+ <router-outlet></router-outlet>
+</div>

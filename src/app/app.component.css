@@ -1,0 +1,9 @@
+.demo-nav-bar, .demo-tab-group {
+  border: 1px solid #212121;
+  background-color:#212121;
+  color: white;
+  margin-bottom: 40px;
+}
+.billing-dark-theme .mat-ink-bar {
+  background-color: #029FC4;
+}

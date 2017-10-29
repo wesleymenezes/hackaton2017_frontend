@@ -1,0 +1,14 @@
+.fill-remaining-space {
+  flex: 1 1 auto;
+}
+
+.demo-nav-bar, .demo-tab-group {
+  border: 1px solid #212121;
+  background-color:#212121;
+  color: white;
+  margin-bottom: 40px;
+}
+
+mat-ink-bar .mat-ink-bar {
+  background-color: #029FC4;
+}

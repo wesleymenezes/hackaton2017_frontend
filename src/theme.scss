@@ -1,0 +1,73 @@
+@import "~@angular/material/_theming.scss";
+
+@include mat-core();
+
+$my-app-primary: mat-palette($mat-blue-grey);
+$my-app-accent:  mat-palette($mat-light-blue, 600, 900, A100);
+$my-app-warn:    mat-palette($mat-deep-orange);
+
+$theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+
+@include angular-material-theme($theme);
+@mixin angular-material-theme($theme) {
+  @include mat-core-theme($theme);
+  @include mat-autocomplete-theme($theme);
+  @include mat-button-theme($theme);
+  @include mat-button-toggle-theme($theme);
+  @include mat-card-theme($theme);
+  @include mat-checkbox-theme($theme);
+  @include mat-chips-theme($theme);
+  @include mat-datepicker-theme($theme);
+  @include mat-dialog-theme($theme);
+  @include mat-grid-list-theme($theme);
+  @include mat-icon-theme($theme);
+  @include mat-input-theme($theme);
+  @include mat-list-theme($theme);
+  @include mat-menu-theme($theme);
+  @include mat-progress-bar-theme($theme);
+  @include mat-progress-spinner-theme($theme);
+  @include mat-radio-theme($theme);
+  @include mat-select-theme($theme);
+  @include mat-sidenav-theme($theme);
+  @include mat-slide-toggle-theme($theme);
+  @include mat-slider-theme($theme);
+  @include mat-tabs-theme($theme);
+  @include mat-toolbar-theme($theme);
+  @include mat-tooltip-theme($theme);
+};
+
+$dark-primary: mat-palette($mat-grey, 100, 100, 900);
+$dark-accent:  mat-palette($mat-light-blue, 600, 900, A100);
+$dark-warn:    mat-palette($mat-deep-orange);
+
+$dark-theme:   mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
+
+.billing-dark-theme{
+  @include angular-material-theme($dark-theme);
+  @mixin angular-material-theme($dark-theme) {
+    @include mat-core-theme($dark-theme);
+    @include mat-autocomplete-theme($dark-theme);
+    @include mat-button-theme($dark-theme);
+    @include mat-button-toggle-theme($dark-theme);
+    @include mat-card-theme($dark-theme);
+    @include mat-checkbox-theme($dark-theme);
+    @include mat-chips-theme($dark-theme);
+    @include mat-datepicker-theme($dark-theme);
+    @include mat-dialog-theme($dark-theme);
+    @include mat-grid-list-theme($dark-theme);
+    @include mat-icon-theme($dark-theme);
+    @include mat-input-theme($dark-theme);
+    @include mat-list-theme($dark-theme);
+    @include mat-menu-theme($dark-theme);
+    @include mat-progress-bar-theme($dark-theme);
+    @include mat-progress-spinner-theme($dark-theme);
+    @include mat-radio-theme($dark-theme);
+    @include mat-select-theme($dark-theme);
+    @include mat-sidenav-theme($dark-theme);
+    @include mat-slide-toggle-theme($dark-theme);
+    @include mat-slider-theme($dark-theme);
+    @include mat-tabs-theme($dark-theme);
+    @include mat-toolbar-theme($dark-theme);
+    @include mat-tooltip-theme($dark-theme);
+  };
+}
