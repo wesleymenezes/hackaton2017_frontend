@@ -1,4 +1,4 @@
-# Hackaton 2017 Fronted
+# Ericsson Hackaton 2017 Frontend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.4.
 
